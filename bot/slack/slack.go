@@ -3,6 +3,7 @@ package slack
 import (
 	"bytes"
 	"encoding/json"
+	"time"
 	"errors"
 	"fmt"
 	"io/ioutil"
@@ -12,6 +13,8 @@ import (
 	texttemplate "text/template"
 
 	"github.com/argoproj-labs/argocd-notifications/bot"
+	
+	"github.com/gorilla/websocket"
 
 	slackclient "github.com/slack-go/slack"
 )
